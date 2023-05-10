@@ -1,10 +1,10 @@
 import "./App.css";
-import { Form } from "./Components/Form";
+import { ReactSelectForm } from "./Components/ReactSelectForm";
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <ReactSelectForm />
     </div>
   );
 }
