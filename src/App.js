@@ -1,10 +1,10 @@
 import "./App.css";
-import { ReactSelectForm } from "./Components/ReactSelectForm";
+import { ReactAsyncSelectForm } from "./Components/ReactAsyncSelectForm";
 
 function App() {
   return (
     <div className="App">
-      <ReactSelectForm />
+      <ReactAsyncSelectForm />
     </div>
   );
 }
