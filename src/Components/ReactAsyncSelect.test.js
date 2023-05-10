@@ -60,7 +60,7 @@ describe("ReactAsyncSelectForm", () => {
     );
 
     await waitFor(async () =>
-      select(await screen.findByLabelText("Animals"), "Zebra")
+      select(screen.getByLabelText("Animals"), "Zebra")
     );
 
     expect(screen.getByLabelText("animal form")).toHaveFormValues({
