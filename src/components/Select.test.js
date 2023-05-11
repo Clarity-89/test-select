@@ -27,7 +27,6 @@ describe("Native select wrapper", () => {
     setup(<Select options={animals} defaultValue={"cat"} />);
 
     expect(screen.getByRole("combobox")).toHaveValue("cat");
-
     expect(screen.getByRole("option", { name: "Cat" }).selected).toBe(true);
   });
 
