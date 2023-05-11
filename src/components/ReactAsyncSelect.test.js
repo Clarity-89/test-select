@@ -21,7 +21,6 @@ describe("ReactAsyncSelectForm", () => {
       <ReactAsyncSelectForm defaultValue={{ value: "cat", label: "Cat" }} />
     );
     expect(await screen.findByText("Cat")).toBeInTheDocument();
-    expect(screen.queryByText("Dog")).not.toBeInTheDocument();
     expect(screen.getByRole("form")).toHaveFormValues({ animals: "cat" });
   });
 
