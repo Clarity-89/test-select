@@ -1,7 +1,7 @@
 import Select from "react-select/async";
 
 export const ReactAsyncSelectForm = (selectProps) => {
-  const loadOptions = (inputValue, callback) => {
+  const loadOptions = () => {
     return new Promise((resolve) => {
       resolve([
         { value: "dog", label: "Dog" },

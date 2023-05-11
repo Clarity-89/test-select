@@ -1,4 +1,4 @@
-export const Select = ({ options, value, ...props }) => {
+export const Select = ({ options, ...props }) => {
   return (
     <select {...props}>
       {options.map((option) => (
